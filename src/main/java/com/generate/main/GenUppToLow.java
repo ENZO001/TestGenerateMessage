@@ -1,4 +1,4 @@
-package com.reading;
+package com.generate.main;
 
 public class GenUppToLow {
 

@@ -110,7 +110,7 @@ public final class Req067311 extends ReqBase {
 			element.addAttribute("value", fm.getSourcEtype());
 
 			element = (Element) document.selectSingleNode("hostgateway/body/data[@id='W_TYPE']");
-			element.addAttribute("value", fm.getwType());
+			element.addAttribute("value", fm.getWType());
 
 			element = (Element) document.selectSingleNode("hostgateway/body/data[@id='EXEMPTION_CODE']");
 			element.addAttribute("value", fm.getExemptionCode());

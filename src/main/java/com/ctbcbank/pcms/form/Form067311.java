@@ -314,11 +314,11 @@ public class Form067311 extends BaseForm {
 		this.sourcEtype = sourcEtype;
 	}
 
-	public String getwType() {
+	public String getWType() {
 		return wType;
 	}
 
-	public void setwType(String wType) {
+	public void setWType(String wType) {
 		this.wType = wType;
 	}
 

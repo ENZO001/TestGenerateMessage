@@ -1,4 +1,4 @@
-package com.reading;
+package com.generate.main;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,9 +18,9 @@ import com.generate.GenerateRtnJava;
 public class Generate {
 
 	public static void main(String[] args) throws IOException, ParserConfigurationException, TransformerException, SAXException {
-		File messageXmlFile = new File("F:\\Temp\\電文產出\\下行\\tx067311d.xml");
-		String workspaceDirectory = "F:\\Workspace\\JavaWorkspace2019\\02_2018_ToolWorkspace\\GenerateMessage";
-		boolean isNeedForm = false;
+		File messageXmlFile = new File("D:\\BUIT-個金\\大作業\\04_開發上相關\\99_法人開戶\\20190308_電文\\士豪負責\\下行\\tx067311d.xml");
+		String workspaceDirectory = "D:\\Workspace2019\\BackEnd\\01_2018_ProblemWorkspace\\TestGenerateMessage";
+		boolean isNeedForm = false; // 需要建Form嗎?
 		
 		String messageXmlFileName = messageXmlFile.getName(); // 給的xml名稱
 		boolean isUpMessage = messageXmlFileName.contains("u"); // 如果有u就是上行，沒有就是下行
