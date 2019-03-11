@@ -18,7 +18,7 @@ public class AboutFile {
 		File createFile = null;
 		boolean createSuccess = false;
 		
-		String formFilePath = workspaceDirectory + "\\src\\main\\java\\com\\ctbcbank\\pcms\\form\\Form" + messageCode + ".java";
+		String formFilePath = workspaceDirectory + "\\pcms-htg\\src\\main\\java\\com\\ctbcbank\\pcms\\form\\Form" + messageCode + ".java";
 		createFile = new File(formFilePath);
 		
 		resultMap.put(FORM_JAVA_PATH, formFilePath);
@@ -30,7 +30,7 @@ public class AboutFile {
 		}
 
 		if (isUpMessage) { // 上行需要 XML + REQ
-			String xmlFilePath = workspaceDirectory + "\\src\\main\\webapp\\WEB-INF\\htg\\req\\req" + messageCode + ".xml";
+			String xmlFilePath = workspaceDirectory + "\\pcms-web\\src\\main\\webapp\\WEB-INF\\htg\\req\\req" + messageCode + ".xml";
 			createFile = new File(xmlFilePath);
 			resultMap.put(XML_FILE_PATH, xmlFilePath);
 //			if (createFile.exists() == false) {
@@ -38,7 +38,7 @@ public class AboutFile {
 				System.out.println("Create req" + messageCode + ".xml Success = " + createSuccess);
 //			}
 
-			String reqJavaPath = workspaceDirectory + "\\src\\main\\java\\com\\ctbcbank\\pcms\\req\\Req" + messageCode + ".java";
+			String reqJavaPath = workspaceDirectory + "\\pcms-htg\\src\\main\\java\\com\\ctbcbank\\pcms\\req\\Req" + messageCode + ".java";
 			createFile = new File(reqJavaPath);
 			resultMap.put(REQ_JAVA_PATH, reqJavaPath);
 //			if (createFile.exists() == false) {
@@ -47,7 +47,7 @@ public class AboutFile {
 //			}
 
 		} else { // 下行需要RTN
-			String rtnJavaPath = workspaceDirectory + "\\src\\main\\java\\com\\ctbcbank\\pcms\\rtn\\Rtn" + messageCode + ".java";
+			String rtnJavaPath = workspaceDirectory + "\\pcms-htg\\src\\main\\java\\com\\ctbcbank\\pcms\\rtn\\Rtn" + messageCode + ".java";
 			createFile = new File(rtnJavaPath);
 			resultMap.put(RTN_JAVA_PATH, rtnJavaPath);
 //			if (createFile.exists() == false) {

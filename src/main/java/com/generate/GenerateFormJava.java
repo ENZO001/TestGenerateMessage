@@ -33,7 +33,11 @@ public class GenerateFormJava {
 		
 		String[] parameterArray = getAllPatameter(messageXmlFile);
 		for (int i = 0; i < parameterArray.length; i++) {
-			writer.println(parameterArray[i]);
+			
+			if (parameterArray[i] != null) {
+				writer.println(parameterArray[i]);
+			}
+			
 		}
 		
 		writer.println("}");
@@ -58,6 +62,10 @@ public class GenerateFormJava {
 		}
 		
 		for (int i = 0; i < idArray.length; i++) {
+			if ("OUTPUT_CODE".equals(idArray[i]) || "MSG".equals(idArray[i]) || "outputCode".equals(idArray[i])) {
+				continue;
+			}
+			
 			String[] lowerInputArray = idArray[i].toLowerCase().split("_");
 			String temp = "";
 			for (int j = 0; j < lowerInputArray.length; j++) {
